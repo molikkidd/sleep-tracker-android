@@ -21,6 +21,7 @@ import androidx.lifecycle.*
 import com.example.android.trackmysleepquality.database.SleepDatabaseDao
 import com.example.android.trackmysleepquality.database.SleepNight
 import com.example.android.trackmysleepquality.formatNights
+import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 
 /**
@@ -29,8 +30,10 @@ import kotlinx.coroutines.launch
 class SleepTrackerViewModel(
 //        connect roomdatabase to view
         val database: SleepDatabaseDao, application: Application) : AndroidViewModel(application) {
-                private var tonight = MutableLiveData<SleepNight?>()
-                private  val nights = database.getAllNights()
+
+        private var tonight = MutableLiveData<SleepNight?>()
+        private  val nights = database.getAllNights()
+
         init {
             initializeTonight()
         }
@@ -95,6 +98,15 @@ class SleepTrackerViewModel(
         }
         val nightsString = Transformations.map(nights) { nights ->
                 formatNights(nights, application.resources)
+        }
+        val startButtonVisible = Transformations.map(tonight) {
+                null == it
+        }
+        val stopButtonVisible = Transformations.map(tonight) {
+                null != it
+        }
+        val clearButtonVisible = Transformations.map(nights) {
+                it?.isNotEmpty()
         }
 }
 
