@@ -39,7 +39,7 @@ buildscript {
         classpath "com.android.tools.build:gradle:$version_gradle"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$version_kotlin"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$version_navigation"
-
+        classpath('com.android.support:recyclerview-v7:+')
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

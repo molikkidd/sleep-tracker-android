@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.22708333333333333" />
+        <entry key="app/src/main/res/drawable/ic_sleep_active.xml" value="0.228125" />
         <entry key="app/src/main/res/layout/fragment_sleep_quality.xml" value="0.1453804347826087" />
-        <entry key="app/src/main/res/layout/fragment_sleep_tracker.xml" value="0.1453804347826087" />
+        <entry key="app/src/main/res/layout/fragment_sleep_tracker.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/list_item_sleep.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/list_item_sleep_night.xml" value="0.2359375" />
+        <entry key="app/src/main/res/layout/text_item_view.xml" value="0.1453804347826087" />
       </map>
     </option>
   </component>
