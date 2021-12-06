@@ -5,6 +5,7 @@
       <map>
         <entry key="../../../../../layout/custom_preview.xml" value="0.22708333333333333" />
         <entry key="app/src/main/res/drawable/ic_sleep_active.xml" value="0.228125" />
+        <entry key="app/src/main/res/layout/fragment_sleep_detail.xml" value="0.21197916666666666" />
         <entry key="app/src/main/res/layout/fragment_sleep_quality.xml" value="0.1453804347826087" />
         <entry key="app/src/main/res/layout/fragment_sleep_tracker.xml" value="0.1" />
         <entry key="app/src/main/res/layout/list_item_sleep.xml" value="0.25" />
